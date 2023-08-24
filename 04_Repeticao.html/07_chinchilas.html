@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Chin , anos , total 
+
+        do{ Chin = Number(prompt("digte o numero inicial de chinchilas"))
+            if(Chin<2 || isNaN(Chin)|| Chin===0){
+
+            alert(`Digite um quantidade de chinchilas que seja maior ou igual a dois!`)
+            location.reload()}
+        
+        }while(Chin<2 || isNaN(Chin)|| Chin===0)
+
+        anos = Number(prompt('digite o numero de anos')) 
+         
+        total = Chin
+        for(let i=1; i<= anos ; i++){
+        total = total * 3}
+        alert(`numero de chinchilas ${total}`)
+
+
+            
+    </script>
+</body>
+</html>

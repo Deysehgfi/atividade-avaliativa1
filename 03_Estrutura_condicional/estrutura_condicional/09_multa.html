@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let veloEstrada, veloCondutor ,velocidade
+            
+        veloEstrada= Number(prompt(`digite a velocidade permitida na estrada`))
+        veloCondutor=Number(prompt(`digite a velocidade do condutor do veiculo`))
+
+        velocidade = veloEstrada*(1.20)
+       
+        //validação
+        if(isNaN(veloEstrada)|| veloEstrada==''|| isNaN(veloCondutor) || veloCondutor=='' || veloCondutor!=0 ||veloEstrada!=0){
+            alert(`invalido`)
+            location.reload()}
+        
+        //logica
+
+        if(veloCondutor<=veloEstrada){
+           alert(`Sem multa`)}
+
+        else if(veloCondutor<=velocidade && veloCondutor>veloEstrada){
+            alert(`Multa leve`)}
+
+        else if(veloCondutor>velocidade){
+            alert(`Multa grave`)}
+
+        else{
+            alert(`invalido`)
+        location.reload()}
+
+    </script>
+</body>
+</html>

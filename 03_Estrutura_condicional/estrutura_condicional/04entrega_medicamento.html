@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="PT/BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let bairro 
+        bairro = prompt("Digite um dos bairros abaixo: \n\n-Antares \n-Barro Duro \n-Bebedouro \n-Benedito Bentes \n-Centro \n-Clima Bom \n-Pajuçara\n-Ponta Verde \n-Jatiúca")
+ 
+        bairro = bairro.toLowerCase()
+
+        //validação -------------------------------------------------------------------------------------
+        
+          if(bairro===''){
+            alert('digite um bairro valido')
+              location.reload()}
+
+        //logica -----------------------------------------------------------------------------------------
+
+          else if(bairro=='antares'){
+              alert(`o valor da taxa de entrega é: R$7,00`)}
+
+          else if(bairro=='barro duro'){
+              alert(`o valor da taxa de entrega é: R$5,00`)}
+
+          else if(bairro=='bebedouro'){
+              alert(`o valor da taxa de entrega é: R$8,00`)}
+
+          else if(bairro=='benedito Bbntes'){
+              alert(`o valor da taxa de entrega é: R$6,00`)}
+
+          else if(bairro=='centro'){
+              alert(`o valor da taxa de entrega é: R$10,00`)}
+
+          else if(bairro=='clima bom'){
+              alert(`o valor da taxa de entrega é: R$4,00`)}
+
+          else if(bairro=='pajuçara'||bairro=='ponta verde'||bairro=='jatiúca'||bairro=='jatiuca'){
+              alert(`o valor da taxa de entrega é: R$15,00`)}
+
+          else{ 
+              alert(`Invalido`)
+                location.reload()}
+    </script>
+</body>
+</html>

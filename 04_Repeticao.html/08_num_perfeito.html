@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let num , somaDiv =0
+
+       num =Number(prompt('digite um numero')) 
+       
+        
+        for(let i=1 ; i<num; i++){
+            if(num%i ===0){  /** i vai aumentando 1 2 3 4  ate chegar no numero menor digitado, se o numero for 6
+                vai ficar:
+                o resto da diisao de 4 po1 um é 0 
+                o resto da divisao de 4 por 2 é 0 
+                o resto da divisao de 4 por 3 é 1 
+                o resto da divisao de 4 por 4 é 0 **/
+                //somaDiv += i;}} 
+                somaDiv = somaDiv + i;}} 
+
+
+                if(somaDiv===num){
+                alert(`numero perfeito`)
+                location.reload()}
+
+                else{
+                    alert(`nao é perfeito`)
+                    location.reload()}
+    </script>
+</body>
+</html>

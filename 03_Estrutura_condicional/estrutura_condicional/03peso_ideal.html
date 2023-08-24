@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mulher, homem, altura, pesoIdeal, sexo
+       
+        altura = Number(prompt("Digite a sua altura:"))
+        sexo = (prompt("digite 'F' para Femininno ou 'M' para Masculino:"))
+
+
+        //toUpperCase() - caixa alta
+        //toLowerCase() - caixa baixa       
+        
+        sexo = sexo.toUpperCase()
+
+        //validação ----------------------------------------------------------------------------
+
+        if(isNaN(altura) || altura === 0 || altura >=2.51){
+            alert(`Digite uma altura valida`)
+                location.reload()}
+
+        else if(sexo!=='F'&& sexo !=='M'){
+            alert(`Inválido, digite 'F' para Feminin ou 'm' para masculino `)
+                location.reload()}
+
+        //logica ----------------------------------------------------------------------------------
+
+        else if(sexo=='F'){
+         pesoIdeal= 21 * (altura*altura)
+            alert(`o peso ideal para você é: ${(pesoIdeal).toFixed(1)} Kg`)}
+
+        else if(sexo =='M'){
+          pesoIdeal= 22 * (altura*altura)
+            alert(`o peso ideal para você é: ${(pesoIdeal).toFixed(1)} Kg`)} 
+
+        else {
+            alert(`invalido`)}
+
+    </script>
+</body>
+</html> 

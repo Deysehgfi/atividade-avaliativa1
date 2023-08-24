@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**let pagar, valor, valor2 , valor3 ,valor4
+        valor = Number(prompt(`Digite o valor do saque:`))
+         
+        if(valor%100==0){
+            pagar= valor/100 
+        alert(`${pagar} notas de 100`)}
+
+        else if(valor%100!=0){
+          valor2= valor/100
+          valor3= valor2%100
+          pagar = valor3/50
+          alert(`${Math.floor(valor2)} notas de 100, ${Math.ceil(pagar)} notas de 50`)}**/
+
+
+          //correção---------------------------------------------------------------------------------
+
+          let valorSaque , notaCem , notaCinquenta, notaDez , resto
+            valorSaque = Number(prompt("digite o valor do saque"))
+            
+          if(valorSaque%100 ===0){
+            alert('ERRO!! notas disponiveis R$ 100, R$50 , R$10')
+            location.reload()}
+
+            notaCem = valorSaque /100
+            resto= valorSaque % 100
+
+            notaCinquenta = Math.floor(resto/50)
+            resto = resto% 50
+            
+            notaDez = Math.floor(resto/10)
+            resto = resto %10
+
+            if(notaCem>0){
+                document.write(`notas de R$ 100: ${notaCem}`)}
+
+            else if(notaCinquenta>0){
+                document.write(`notas de R$ 50: ${notaCinquenta}`)}
+
+            else if(notasDez>0){
+                document.write(`notas de R$ 10: ${notaDez}`)}
+
+            else{
+                alert(`oi`)
+            }
+
+
+
+            
+
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let horaBrasil, horaFranca
+
+        horaBrasil = Number(prompt("Digite a hora do Brasil no formato HH.MM"))
+
+        //validação
+         if(isNaN(horaBrasil) || horaBrasil<0){
+            alert(`digite um horário válido`)}
+
+        //logica
+        horaFranca = horaBrasil+5 
+        if(horaFranca >24){
+            horaFranca = horaFranca -24
+        }
+        alert(`Hora Brasil ${horaBrasil}, Hora França ${horaFranca}`)
+
+        
+
+        
+
+
+    </script>
+</body>
+</html>

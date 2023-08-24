@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+      /** let num1 ,num2
+
+        num1 = Number(prompt("Digite numero:"))
+        num2 = Number(prompt("Digite outro numero:"))
+        
+        
+        if(num1>num2){
+            alert(`o maior numero é: ${num1}`)}
+
+        else{
+            alert(`o maior numero é: ${num2}`)}**/
+
+
+
+     let variavel1 ,variavel2
+
+        variavel1 = Number(prompt("Digite numero:"))
+        variavel2 = Number(prompt("Digite outro numero:"))
+        
+        //validação --------------------------------------------------------------------------
+
+        if(variavel1 ===0 || isNaN(variavel1)){
+            alert(`o numero ${variavel1} é invalido para o sistema`)
+                location.reload()}
+            
+        if(variavel2 ===0 || isNaN(variavel2)){
+            alert(`o numero ${variavel2} é invalido para o sistema`)
+                location.reload()}
+
+        //logica ---------------------------------------------------------------------------
+        
+        else if(variavel1>variavel2){
+            alert(`o maior numero é: ${variavel1}`)}
+           
+        else if(variavel2>variavel1){
+            alert(`o maior numero é: ${variavel2}`)}
+        
+        else{
+            alert(`Não é possivel fazer compração entre os valores ${variavel1} - ${variavel2}`)
+                location.reload()}
+           
+    </script>
+</body>
+</html>
