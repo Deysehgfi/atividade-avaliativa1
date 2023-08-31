@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>    
+        let n, numeros= []
+        n=Number(prompt('digite quantos números você quer cadastrar no Array'))
+
+        for(let i =0; i<n ; i++){
+            numeros[i] =Number(prompt(`digite um valor para o indice ${i}º do vetor`))}
+
+            document.write(numeros)
+            document.write(`<br>---------------------------------------------<br>`)
+            for(let i=n; i>= 0; i--){
+                document.write(numeros[i])}
+    </script>
+</body>
+</html>
